@@ -1,11 +1,14 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import Navbar from './Navbar';
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>My First Youtube App!</Text>
+
+     <Navbar />
+
       </View>
     );
   }
@@ -13,9 +16,7 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+   
   },
 });
