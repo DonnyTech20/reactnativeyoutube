@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import Navbar from './components/Navbar';
+import Tabbar from './components/Tabbar';
 
 export default class App extends React.Component {
   render() {
@@ -8,6 +9,7 @@ export default class App extends React.Component {
       <View style={styles.container}>
 
      <Navbar />
+     <Tabbar />
 
       </View>
     );

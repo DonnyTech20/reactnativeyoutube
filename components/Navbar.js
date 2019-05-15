@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, Image } from 'react-native';
+import { View, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import { Icon } from 'react-native-elements';
 //import {Icon} from 'react-native-icons/MaterialIcons';
 
@@ -8,11 +8,20 @@ export default class Navbar extends Component {
 		return (
 			<View style={styles.container}>
 				<View style={styles.navbar}>
-					<Image style={styles.logo} source={require('../img/youtube.png')} />
-
-					<View>
+		
+					<Image 
+					style={styles.logo}
+					
+					source={require('../img/youtube.png')} />
+					
+					<View style={styles.moveright}>
+					<TouchableOpacity>
 						<Icon name="search" size={27} style={styles.icons} />
+						</TouchableOpacity>
+
+						<TouchableOpacity>
 						<Icon name="account-circle" size={27} style={styles.icons} />
+						</TouchableOpacity>
 					</View>
 				</View>
 			</View>
@@ -38,6 +47,10 @@ const styles = StyleSheet.create({
 		height: 23
 	},
 	moveright: {
-		flexDirection: 'row'
-	}
+		flexDirection: 'row',
+	},
+	icons: {
+		padding: 5,
+		marginLeft: 15,
+	},
 });
