@@ -9,10 +9,37 @@ export default class Tabbar extends Component {
   render() {
     return (
       <View style={styles.tabbar}>
+
         <TouchableOpacity style={styles.container}>
             <Icon name='home' size={25} />
             <Text style={styles.mytext}>Home</Text>
         </TouchableOpacity>
+
+        <TouchableOpacity style={styles.container}>
+            <Icon name='whatshot' size={25} />
+            <Text style={styles.mytext}>WhatsHot</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.container}>
+            <Icon name='subcriptions' size={25} />
+            <Text style={styles.mytext}>Subscriptions</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.container}>
+            <Icon name='add-alert' size={25} />
+            <Text style={styles.mytext}>Activity</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.container}>
+            <Icon name='folder' size={25} />
+            <Text style={styles.mytext}>Account</Text>
+        </TouchableOpacity>
+
+
+
+
+
+
       </View>
     );
   }
